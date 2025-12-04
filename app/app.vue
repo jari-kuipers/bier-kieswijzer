@@ -56,38 +56,38 @@ const peroniStock = ref(Math.floor(Math.random() * 8) + 3) // 3-10 flesjes
 
 const questions = [
   {
-    question: "Hoe avontuurlijk ben je vandaag?",
+    question: "Hoe belangrijk is het voor jou dat je bier altijd beschikbaar is?",
     options: [
-      { text: "Ik hou van vertrouwde keuzes 🇳🇱", value: "grolsch" },
-      { text: "Ik wil de wereld proeven! 🇮🇹", value: "peroni" }
+      { text: "Ik wil graag een betrouwbare voorraad! 📦", value: "grolsch" },
+      { text: "Exclusiviteit > beschikbaarheid 💎", value: "peroni" }
     ]
   },
   {
     question: "Wat is jouw ideale avond?",
     options: [
-      { text: "Gezellig op de bank met bitterballen", value: "grolsch" },
+      { text: "Gezellig op de bank met bitterballen 🛋️", value: "grolsch" },
       { text: "Aperitivo op een Italiaans terras ☀️", value: "peroni" }
     ]
   },
   {
-    question: "Welke beugel spreekt je meer aan?",
+    question: "Hoe voel je je over beperkte edities en schaarste?",
+    options: [
+      { text: "Ik wil gewoon altijd kunnen pakken wat ik wil! ✅", value: "grolsch" },
+      { text: "Ik leef graag op het randje! 🎲", value: "peroni" }
+    ]
+  },
+  {
+    question: "Wat is jouw mening over het einde van een feest?",
+    options: [
+      { text: "Ik wil dat het bier op gaat en het feest eindigt! 🎉🚫", value: "peroni" },
+      { text: "Het feest mag nog uren doorgaan! 🍻", value: "grolsch" }
+    ]
+  },
+  {
+    question: "Laatste vraag: Welke beugel spreekt je meer aan?",
     options: [
       { text: "De iconische Grolsch beugel! Classic! 💪", value: "grolsch" },
       { text: "Gewoon een flesje, geen gedoe 😎", value: "peroni" }
-    ]
-  },
-  {
-    question: "Wat zeg je tegen iemand die een ander biertje drinkt?",
-    options: [
-      { text: "Nederlands bier is gewoon superieur! 🏆", value: "grolsch" },
-      { text: "La dolce vita! Proef de zon! ☀️🍋", value: "peroni" }
-    ]
-  },
-  {
-    question: "Laatste vraag: Kop of munt?",
-    options: [
-      { text: "Kop (gewoon Nederlands) 🪙", value: "grolsch" },
-      { text: "Munt (bella Italia!) 🪙", value: "peroni" }
     ]
   }
 ]
