@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="beer-quiz">
-      <h1 class="title">🍺 De Ultieme Bierkieswijzer 🍺</h1>
+      <h1 class="title"><span class="title-text">🍺 De Ultieme Bierkieswijzer 🍺</span></h1>
       <p class="subtitle">Grolsch of Peroni? Wij helpen je kiezen!</p>
 
       <div v-if="!showResult" class="quiz-section">
@@ -162,13 +162,19 @@ function resetQuiz() {
 }
 
 .container {
-  min-height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  overflow: auto;
 }
 
 .beer-quiz {
@@ -183,6 +189,11 @@ function resetQuiz() {
   margin-bottom: 10px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   animation: bounce 1s ease-in-out;
+}
+
+.title-text {
+  white-space: nowrap;
+  display: inline-block;
 }
 
 .subtitle {
